@@ -1205,7 +1205,9 @@ module.exports = {
     usePhysics: {
       default: 'ifavailable'
     },
-    constraintComponentName: {default: 'constraint'}
+    constraintComponentName: {
+      default: 'constraint'
+    }
   },
   physicsInit: function () {
     this.constraints = new Map();
@@ -1403,9 +1405,8 @@ AFRAME.registerComponent('stretchable', inherit(base, {
     }
 
     let physicsShape;
-    let offset;
+    let offset; // CANNON.js has el.body.shapes.  Ammo has collisionShapes in the shape component.
 
-    // CANNON.js has el.body.shapes.  Ammo has collisionShapes in the shape component.
     const shapesList = el.body.shapes ? el.body.shapes : el.components["ammo-shape"].collisionShapes;
 
     for (let i = 0; i < shapesList; i++) {
@@ -1430,7 +1431,7 @@ AFRAME.registerComponent('stretchable', inherit(base, {
     if (el.body.updateBoundingRadius) {
       // This only exists in CANNON, not Ammo.js
       // I'm not aware of any requirement to call an equivalent function
-      // in Ammo.js      
+      // in Ammo.js
       el.body.updateBoundingRadius();
     }
   }

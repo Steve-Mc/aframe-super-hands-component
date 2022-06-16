@@ -1,5 +1,5 @@
 {
-  "name": "@steve-mc/super-hands",
+  "name": "super-hands-ammo-js",
   "version": "3.0.3",
   "description": "All-in-one natural hand controller interaction component for A-Frame.",
   "main": "index.js",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wmurphyrd/aframe-super-hands-component.git"
+    "url": "git+https://github.com/Steve-Mc/aframe-super-hands-component.git"
   },
   "keywords": [
     "aframe",
