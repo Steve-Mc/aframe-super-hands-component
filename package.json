@@ -1,5 +1,5 @@
 {
-  "name": "super-hands",
+  "name": "@steve-mc/super-hands",
   "version": "3.0.3",
   "description": "All-in-one natural hand controller interaction component for A-Frame.",
   "main": "index.js",
@@ -86,5 +86,9 @@
   },
   "dependencies": {
     "@babel/core": "^7.17.5"
+  },
+  "directories": {
+    "example": "examples",
+    "test": "tests"
   }
 }
